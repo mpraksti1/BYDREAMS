@@ -1,0 +1,8 @@
+<div class="nav" ng-class="{'active-menu': mobileActive}">
+	<ul>
+		<li ng-repeat="item in navItems" ui-sref-active="active">
+			<img ng-if="$index == 0" src="/img/nav-logo.jpg" alt="">
+			<a ui-sref="{{item.href}}">{{item.title}}</a>
+		</li>
+	</ul>	
+</div>
